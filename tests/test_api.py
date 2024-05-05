@@ -12,7 +12,6 @@ prod = Product(prod_name,prod_type,prod_exot)
 @pytest.fixture
 def product():
     return prod.get_dict() # преобразуем экземпляр в словарь (json)
-    #return {'name':prod_name, 'type':prod_type, 'exotic':prod_exot}
 
 # тест статуса
 def test_check_status():
